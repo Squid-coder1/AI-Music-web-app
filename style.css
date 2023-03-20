@@ -1,0 +1,19 @@
+#heading
+{
+    margin-left: 500px;
+    font-size: 40px;
+}
+
+#note{
+    margin-left: 513px;
+    font-size: 18px;
+
+}
+
+
+canvas
+{
+box-shadow: 10px 10px 10px lawngreen;
+border-radius: 10px;
+margin-top:30px;
+}
