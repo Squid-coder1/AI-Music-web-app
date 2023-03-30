@@ -1,11 +1,13 @@
 music1="";
 music2="";
-
+playnot="";
 leftWristX=0;
 leftWristY=0;
 
 rightWristX=0;
 rightWristY=0;
+
+leftWristScore=0;
 
 function preload() {
     song=loadSound("music.mp3");
@@ -25,10 +27,16 @@ function setup()
 function draw()
 {
     image(video,0,0,600,500)
+
+    fill("FF0000");
+    stroke("FF0000");
+    circle(rightWristX,rightWristY,20);
 }
 
 function gotPoses(results)
 {
+    results[0].pose.keypoints[9].score;
+
     if(results.length > 0)
     {
     console.log(results);
